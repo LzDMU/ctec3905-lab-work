@@ -4,3 +4,9 @@ body {background: aqua;}
     background-color: orange;
     color: red;
 }
+
+.new-class {
+    background-color: purple;
+    color: brown;
+    font-size: large;
+}
