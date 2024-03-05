@@ -1,0 +1,47 @@
+nav {
+
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.5s;
+   transform: translateX(100vw);
+   position: fixed;
+   width: 100%;
+   top: 0;
+   height: 100vh;
+}
+
+nav.open {
+    opacity: 1;
+    transform: translateX(0vw);
+}
+
+nav a {
+    background-color: rgb(172, 225, 255);
+    color: rgb(255, 83, 31);
+   padding: 5%;
+}
+
+#menuToggler {
+    cursor: pointer;
+    color: rgb(255, 83, 31);
+    font-size: 20px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    height: 100vh;
+}
+
+@media screen and (min-width: 500px) {
+    
+#menuToggler {
+    display: none;
+    }
+
+nav {
+    display: flex;
+    flex-direction: row;
+    }
+
+}
